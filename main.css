@@ -1,0 +1,13 @@
+/* Default styles for light mode */
+body {
+    background-color: #ffffff;
+    color: #000000;
+};
+
+/* Dark mode styles using media query */
+@media (prefers-color-scheme: Dark) {
+    body {
+        background-color: #1a1a1a;
+        color: #ffffff;
+    };
+};
