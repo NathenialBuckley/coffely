@@ -5,10 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffely</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 
-<body>
-    <!-- Start Building Page Content -->
-</body>
+<main>
+    <div>Hello</div>
+    <section class="login-box">
+        <p class="email">Email or Username</p>
+        <p class="password">Password</p>
+        <p class="signin">Sign In</p>
+    </section>
+    <p>Forgot Password</p>
+    <p>------ OR -------</p>
+    <p>Create Account</p>
+    <p>Copyright @ 2023 CoffelyLLC. All rights reserved.</p>
+    <p>Terms of Use | Privacy Policy</p>
+</main>
+
+<button id="dark-mode-toggle">Toggle Dark Mode</button>
+
+<script>
+    const darkModeToggle = document.getElementById('dark-mode-toggle');
+    const body = document.body;
+
+    // Check if user has a preference stored
+    const isDarkMode = localStorage.getItem('darkMode') === 'true';
+
+    // Set initial mode based on user preference
+    body.classList.toggle('dark-mode', isDarkMode);
+
+    darkModeToggle.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');
+    });
+</script>
 
 </html>
