@@ -1,13 +1,41 @@
-/* Default styles for light mode */
-body {
-    background-color: #ffffff;
-    color: #000000;
+:root {
+    /* Light Mode Styles */
+    --background-color-light: #ffffff;
+    --text-color-light: #333333;
+
+    /* Dark Mode Styles */
+    --background-color-dark: #121212;
+    --text-color-dark: #ffffff;
 };
 
-/* Dark mode styles using media query */
-@media (prefers-color-scheme: Dark) {
+/* Light Mode Styles */
+body {
+    background-color: var(--background-color-light);
+    color: var(--text-color-light);
+};
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+};
+
+/* Checks for user preference */
+@media (prefers-color-scheme: dark) {
     body {
-        background-color: #1a1a1a;
-        color: #ffffff;
+        background-color: var(--background-color-dark);
+        color: var(--text-color-dark);
     };
+};
+
+.login-box {
+    padding: 100px;
+    background: black;
+    border: 14px solid #transparent;
+};
+
+.div {
+    padding: 100px;
+    background: black;
+    border: 14px solid #008080;
 };
