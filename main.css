@@ -1,26 +1,26 @@
-:root {
-    /* Light Mode Styles */
+/* :root {
+    
     --background-color-light: #ffffff;
     --text-color-light: #333333;
 
-    /* Dark Mode Styles */
+    
     --background-color-dark: #121212;
     --text-color-dark: #ffffff;
 };
 
-/* Light Mode Styles */
+
 body {
     background-color: var(--background-color-light);
     color: var(--text-color-light);
 };
 
-/* Dark Mode Styles */
+
 body.dark-mode {
     background-color: var(--background-color-dark);
     color: var(--text-color-dark);
 };
 
-/* Checks for user preference */
+
 @media (prefers-color-scheme: dark) {
     body {
         background-color: var(--background-color-dark);
@@ -35,6 +35,12 @@ body.dark-mode {
 };
 
 .div {
+    padding: 100px;
+    background: black;
+    border: 14px solid #008080;
+}; */
+
+div {
     padding: 100px;
     background: black;
     border: 14px solid #008080;
